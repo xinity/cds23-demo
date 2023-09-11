@@ -17,7 +17,7 @@ spec:
     spec:
       project: workload
       sources:
-      - repoURL: 'https://joaquinrz.github.io/capi-gitops/'
+      - repoURL: 'https://github.com/xinity/cds23-demo/'
         targetRevision: "0.0.3"
         chart: imdb
         helm:

@@ -16,7 +16,7 @@ spec:
     spec:
       project: clusters
       source:
-        repoURL: 'https://joaquinrz.github.io/capi-gitops'
+        repoURL: 'https://github.com/xinity/cds23-demo'
         targetRevision: 0.0.6
         chart: capi-aks
         helm:

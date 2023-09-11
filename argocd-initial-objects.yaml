@@ -5,7 +5,7 @@ applications:
   - resources-finalizer.argocd.argoproj.io
   project: infra
   source:
-    repoURL: https://github.com/joaquinrz/capi-gitops
+    repoURL: https://github.com/xinity/cds23-demo
     targetRevision: main
     path: gitops/management
     directory:

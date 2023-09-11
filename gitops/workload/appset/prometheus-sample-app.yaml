@@ -15,7 +15,7 @@ spec:
     spec:
       project: workload
       source:
-        repoURL: https://github.com/joaquinrz/capi-gitops.git
+        repoURL: https://github.com/xinity/cds23-demo.git
         targetRevision: main
         path: apps/simple
       destination:
