@@ -7,15 +7,6 @@ spec:
   generators:
   - list:
       elements:
-      - cluster: management
-        url: https://kubernetes.default.svc
-        workload-cluster: aks-capz1
-      - cluster: management
-        url: https://kubernetes.default.svc
-        workload-cluster: aks-capz2
-      - cluster: management
-        url: https://kubernetes.default.svc
-        workload-cluster: aks-capz3
   template:
     metadata:
       name: '{{workload-cluster}}'
@@ -27,6 +18,8 @@ spec:
         chart: capi-aks
         helm:
           values: |
+	    controlAgentPoolNodes: 1
+	    workerAgentPoolNodes: 1
             k8sVersion: v1.26.6
             controlAgentPoolNodeSize: Standard_B4ms
             workerAgentPoolNodeSize: Standard_B4ms
