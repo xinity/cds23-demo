@@ -16,6 +16,15 @@ spec:
       - cluster: management
         url: https://kubernetes.default.svc
         workload-cluster: cds23capz3
+      - cluster: management
+        url: https://kubernetes.default.svc
+        workload-cluster: cds23capz4
+      - cluster: management
+        url: https://kubernetes.default.svc
+        workload-cluster: cds23capz5
+      - cluster: management
+        url: https://kubernetes.default.svc
+        workload-cluster: cds23capz6
   template:
     metadata:
       name: '{{workload-cluster}}'
