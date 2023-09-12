@@ -21,8 +21,6 @@ spec:
         chart: capi-aks
         helm:
           values: |
-	    controlAgentPoolNodes: 1
-	    workerAgentPoolNodes: 1
             k8sVersion: v1.26.6
             controlAgentPoolNodeSize: Standard_B4ms
             workerAgentPoolNodeSize: Standard_B4ms
