@@ -9,7 +9,7 @@ spec:
       elements:
       - cluster: management
         url: https://kubernetes.default.svc
-        workload-cluster: akscds23-capz1
+        workload-cluster: cds23capz1
   template:
     metadata:
       name: '{{workload-cluster}}'
